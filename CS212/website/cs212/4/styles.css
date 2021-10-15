@@ -1,0 +1,37 @@
+body {
+    background-color: #aaa;
+    margin: 0;
+}
+
+h1, h2 {
+    padding: 25px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+p {
+    text-indent: 50px;
+}
+
+.page {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5%;
+    box-shadow: #888 0 0 25px 10px;
+    font-size: 14pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hanging p {
+    padding-left: 50px;
+    text-indent: -50px;
+}
+
+.heading p {
+    text-indent: 0;
+    font-weight: bold;
+}
