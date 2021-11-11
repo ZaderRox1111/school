@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+    <head>
+    <meta charset="utf-8">
+
+    <title>Homework 7</title>
+
+    <meta property="og:url" content="https://www.zder.xyz/cs212/homework/7">
+
+    <script src="./p5/p5.js"></script>
+    <script src="./scripts/scripts.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class='container'>
+        <div id='header'>Using Javascript For Simulations</div>
+
+        <main>
+            <div id="sketch-holder">
+                <!-- sketch will go here -->
+            </div>
+
+            <div class='simplejs'>
+                <p>Bubble Sorting the array: [12, 54, 6, 190, 239, 1, 5, 92, 34, 1098]</p>
+
+                <p><button type='button' onClick='changeText()'>
+                    Sort The Array!
+                </button></p>
+
+                <p id='answer'>Click the button to get the sorted array</p>
+                <script src='./scripts/bubbleSort.js'></script>
+            </div>
+        </main>
+
+        <div id='sidebar'>
+            <ul>
+                <li><a href="">Large Menu Item 1</a><ul>
+                    <li><a href="">Sub Menu 1</a></li>
+                    <li><a href="">Sub Menu 2</a></li>
+                    <li><a href="">Sub Menu 3</a></li>
+                </ul></li>
+                <li><a href="">Large Menu Item 2</a><ul>
+                    <li><a href="">Sub Menu 1</a></li>
+                </ul></li>
+                <li><a href="">Large Menu Item 3</a><ul>
+                    <li><a href="">Sub Menu 1</a></li>
+                    <li><a href="">Sub Menu 2</a></li>
+                    <li><a href="">Sub Menu 3</a></li>
+                </ul></li>
+            </ul>
+        </div>
+
+        <div id='ad'>
+            <a class='adcar' href="https://www.amazon.com/Hot-Wheels-Fast-Furious-5-Pack/dp/B07Y95H276/ref=sr_1_3?keywords=hot+wheels&qid=1636660093&sr=8-3">
+                <img src='./hotwheels.jpg' alt='Amazon.com Ad'></img>
+            </a>
+        </div>
+
+        <div id='footer'>
+            <h4>Addendum</h4>
+            <p>I was unsure if drawing on a canvas using Javascript was what you wanted, so I also added a bubble sort function tied to a button click. For the canvas, I first had to get the id of a div where the canvas was going to be located. Using the width and height of that div, it creates a canvas and places it under the div. I made a particle class that has a few functions that get called with every draw. Update position/speed calculates a new random modifier to add to the speed at every call and updates the position using that speed. Check for collisions checks for collisions with walls and calculates the new trajectory. Update tail will create, push to, and use a position history to make tail pieces. Show will show all of the pieces together with every draw call. The bubble sort function takes in a static array and sorts it at the push of a button. The button updates the html of a p with the sorted array.</p>
+        </div>
+    </body>
