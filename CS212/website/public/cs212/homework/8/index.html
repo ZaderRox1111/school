@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+    <head>
+    <meta charset="utf-8">
+
+    <title>Homework 8</title>
+
+    <meta property="og:url" content="https://www.zder.xyz/cs212/homework/8">
+
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class='container'>
+      <div id='header'>Mad Libs! Homework 8</div>
+
+      <main>
+        <div class='form-container'>
+          <form class='form' action="/cs212/homework/8" method='POST'>
+            <!--place, adj, verb, food, things, profession, thing, color, celebrity, animal-->
+            <label for="place">Place</label>
+            <input type="text" id="place" name="place" placeholder="Place...">
+        
+            <label for="adj">Adjective</label>
+            <input type="text" id="adj" name="adj" placeholder="Adjective...">
+
+            <label for="verb">Verb</label>
+            <input type="text" id="verb" name="verb" placeholder="Action Verb...">
+            
+            <label for="food">Food</label>
+            <input type="text" id="food" name="food" placeholder="Food...">
+            
+            <label for="things">Things</label>
+            <input type="text" id="things" name="things" placeholder="Things (plural)...">
+            
+            <label for="profession">Profession</label>
+            <input type="text" id="profession" name="profession" placeholder="Profession...">
+            
+            <label for="thing">Thing</label>
+            <input type="text" id="thing" name="thing" placeholder="Thing (singular)...">
+            
+            <label for="color">Color</label>
+            <input type="text" id="color" name="color" placeholder="Color...">
+            
+            <label for="celebrity">Celebrity</label>
+            <input type="text" id="celebrity" name="celebrity" placeholder="Celebrity, or someone famous...">
+            
+            <label for="animal">Animal</label>
+            <input type="text" id="animal" name="animal" placeholder="Animal...">
+          
+            <input type="submit" value="Get Your Mad Lib!">
+          </form>
+
+          <div class='madlib'>
+            <p>Enter data into the form to get a madlib!</p>
+          </div>
+        </div>
+      </main>
+    </body>
+</html>
